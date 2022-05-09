@@ -21,6 +21,7 @@
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Tag</th>
+                <th scope="col">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -28,6 +29,7 @@
                 <tr>
                     <th scope="row">{{ $tag->id }} </th>
                     <td>{{ $tag->name }} </td>
+                    <td><a href="/show/{{$tag->id}}">Show</a></td>
                 </tr>
             @endforeach
         </tbody>
@@ -42,7 +44,6 @@
             <div class="card-body">
                 <h5 class="card-title">{{ $article->name }} </h5>
                 @foreach ($article->tags as $tag)
-                    <h6 class="card-subtitle mb-2 text-muted">{{ $tag->id }} </h6>
                     <h6 class="card-subtitle mb-2 text-muted">{{ $tag->name }} </h6>
                 @endforeach
                 <p class="card-text">{{ $article->contenu }} </p>

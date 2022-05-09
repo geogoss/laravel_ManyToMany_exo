@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TagController;
 use App\Models\article;
 use App\Models\Tag;
 use Illuminate\Support\Facades\Route;
@@ -24,3 +25,7 @@ Route::get('/article', function () {
     $tags = Tag::all();
     return view('pages.afficheArticle', compact('articles', 'tags'));
 });
+
+Route::get('/show/{id}', [TagController::class, 'show']);
+
+

@@ -18,13 +18,7 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/create">Create new student</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/student">Student tab</a>
+                    <a class="nav-link active" aria-current="page" href="/article">article</a>
                   </li>
                 </ul>
               </div>
